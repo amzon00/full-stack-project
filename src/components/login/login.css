@@ -1,0 +1,97 @@
+.wrapper {
+    display: flex;
+    height: 40rem;
+    width: 40rem;
+    margin: 100px 30%;
+}
+
+.wrapper input {
+    border-radius: 25px;
+    padding: 10px;
+    border-color: #FB2;
+    outline: none;
+    background-color: #600;
+    ;
+}
+
+/* Submit button start */
+button {
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    position: relative;
+    margin-right: 10px;
+}
+
+.fantasy span,
+.fantasy:after,
+.double:after {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: auto;
+}
+
+.fantasy:after,
+.double:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fantasy {
+    background-color: #600;
+    border-width: 0.15em;
+    border-style: outset outset outset inset;
+    border-color: #FB2;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0.09375em #000;
+}
+
+.fantasy:after {
+    box-shadow: 0px 0px 0.25em 0.25em rgba(0, 0, 0, 0.5) inset;
+}
+
+.text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FB2;
+    font-weight: bold;
+    padding: 0.5em 1.75em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 0.15625em #000;
+
+    background: linear-gradient(#B00, #A00, #B00);
+    border: 0.25em outset #A00;
+}
+
+/* Submit button end */
+
+.login-user {
+    margin-top: 40%;
+    margin-left: 85%;
+}
+
+.login-password {
+    margin-top: 15%;
+    margin-left: 85%;
+}
+
+.login-button {
+    margin-top: 30%;
+    margin-left: 100%;
+}
+
+label {
+    font-size: large;
+    color: #FB2;
+    margin: -5%;
+}
+
+img {
+    margin-left: 90%;
+}
