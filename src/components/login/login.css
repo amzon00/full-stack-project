@@ -1,3 +1,7 @@
+body {
+    background-image: url('../../images/19670.jpg');
+}
+
 .wrapper {
     display: flex;
     height: 40rem;

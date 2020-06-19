@@ -1,0 +1,22 @@
+body {
+    /* background-color: rgb(0, 20, 30); */
+    background-image: url('../../images/19760.jpg');
+    background-repeat: no-repeat;
+}
+
+.main-buttons {
+    margin-top: 5%;
+}
+
+.main-btn {
+    display: block;
+    font-size: x-large;
+    margin: 40px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-logo-img {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 11%;
+}

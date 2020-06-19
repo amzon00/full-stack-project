@@ -1,3 +1,6 @@
 import React from "react";
+import "./register.css";
 
-export {};
+export default function register() {
+  return <div></div>;
+}
