@@ -1,12 +1,10 @@
 body {
     position: relative;
     background-color: black;
-    /* background-image: url('../../../images/TVkGvZR.gif'); */
     background-repeat: no-repeat;
 }
 
 .circle-center {
-    /* position: relative; */
     display: flex;
     margin: 7% auto;
 }
@@ -19,31 +17,35 @@ body {
     height: 250px;
 }
 
-.circle-avatar {}
-
-/* #avatar-1 {
+.avatar-frame {
     position: absolute;
-    margin-top: -4%;
-    margin-left: 60%;
+    background-image: url('../../../images//avatar-frame.png');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 150px;
+}
+
+#avatar-1 {
+    /* bottom: 125px;
+    left: 145px; */
+    bottom: -120px;
+    left: 435px;
 }
 
 #avatar-2 {
-    position: absolute;
-    margin-top: -4%;
-    margin-left: 32%;
+    /* bottom: 125px; */
+    bottom: -120px;
+    left: 290px;
 }
 
 #avatar-3 {
-    position: absolute;
-    margin-top: -11%;
-    margin-left: 32%;
+    bottom: -120px;
+    left: 145px;
 }
 
 #avatar-4 {
-    position: absolute;
-    margin-top: -11%;
-    margin-left: 60%;
-} */
+    bottom: -120px;
+}
 
 th {
     background-image: url('../../../images/username-frame.png');
