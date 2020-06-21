@@ -2,12 +2,14 @@ import React from "react";
 import "./login.css";
 import Header from "../common/header/Header";
 
+interface LoginState {}
+
 export default function Login() {
   return (
     <div>
       <Header />
       <div className="wrapper">
-        <form>
+        <form onSubmit={handleSubmit}>
           <img
             src="https://fontmeme.com/permalink/200619/ff2a1a9af93c57f75b06db8fb84f24c1.png"
             alt="Login"
@@ -42,4 +44,8 @@ export default function Login() {
       </div>
     </div>
   );
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+  }
 }

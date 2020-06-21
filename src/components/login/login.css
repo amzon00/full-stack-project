@@ -1,5 +1,6 @@
 body {
     background-image: url('../../images/19670.jpg');
+    background-repeat: no-repeat;
 }
 
 .wrapper {
