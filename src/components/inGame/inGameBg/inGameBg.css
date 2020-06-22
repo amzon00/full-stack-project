@@ -1,22 +1,24 @@
-body {
+/* body {
     position: relative;
     background-color: black;
     background-repeat: no-repeat;
-}
+} */
 
 .circle-center {
     display: flex;
     margin: 7% auto;
 }
 
+/* Username, HP score container */
 .username-container {
-    /* background-image: url('../../../images/pngfuel.com\ \(2\).png'); */
+    /* background-color: red; */
     position: absolute;
     display: flex;
-    width: 300px;
-    height: 250px;
+    width: 500px;
+    height: 500px;
 }
 
+/* Golden frames in the down left corner of the page */
 .avatar-frame {
     position: absolute;
     background-image: url('../../../images//avatar-frame.png');
@@ -28,29 +30,29 @@ body {
 #avatar-1 {
     /* bottom: 125px;
     left: 145px; */
-    bottom: -120px;
+    bottom: 0px;
     left: 435px;
 }
 
 #avatar-2 {
     /* bottom: 125px; */
-    bottom: -120px;
+    bottom: 0px;
     left: 290px;
 }
 
 #avatar-3 {
-    bottom: -120px;
+    bottom: 0px;
     left: 145px;
 }
 
 #avatar-4 {
-    bottom: -120px;
+    bottom: 0px
 }
 
-th {
+td {
     background-image: url('../../../images/username-frame.png');
     background-repeat: no-repeat;
-    font-size: medium;
+    font-size: large;
     color: white;
     font-family: inherit;
     height: 60px;
@@ -59,8 +61,9 @@ th {
 
 p {
     display: flex;
+    font-family: fantasy;
     margin-top: 0px;
-    margin-left: 33px;
+    margin-left: 38px;
 }
 
 .magician {

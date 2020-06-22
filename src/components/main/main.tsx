@@ -1,8 +1,13 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import "./main.css";
 import Header from "../common/header/Header";
 
-export default function main() {
+interface Props {}
+
+export default function main({}: Props): ReactElement {
+  document.getElementsByTagName("body")[0].style.backgroundImage =
+    "url(https://images4.alphacoders.com/936/thumb-1920-936217.jpg)";
+  // "url(https://wallpapershome.com/images/pages/pic_h/19760.jpg)"; // <--- alternative URL
   return (
     <div>
       <Header />
@@ -14,7 +19,7 @@ export default function main() {
         />
       </div>
       <div className="main-buttons">
-        <button className="fantasy main-btn">
+        <button type="button" className="fantasy main-btn">
           <span className="double">
             <span className="text">Create New Game</span>
           </span>

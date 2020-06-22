@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
 import Header from "../common/header/Header";
 
-interface LoginState {}
+export interface LoginState {
+  username: string;
+  password: string | number;
+}
 
-export default function Login() {
+export default function Login<LoginState>() {
+  const [username, setUsername] = useState({});
+  const [password, setPassword] = useState({});
+  document.getElementsByTagName("body")[0].style.backgroundImage =
+    "url(https://wallpapershome.ru/images/pages/pic_h/19670.jpg)";
+
   return (
     <div>
       <Header />
@@ -21,7 +29,13 @@ export default function Login() {
                 alt="username-label"
               />
             </label>
-            <input type="text" name="username" />
+            <input
+              type="text"
+              name="username"
+              onChange={(event): any =>
+                setUsername({ username: event.target.value })
+              }
+            />
           </div>
           <div className="login-password">
             {" "}
@@ -31,7 +45,13 @@ export default function Login() {
                 alt="password-label"
               />
             </label>
-            <input type="password" name="username" />
+            <input
+              type="password"
+              name="username"
+              onChange={(event): any =>
+                setPassword({ password: event.target.value })
+              }
+            />
           </div>
           <div className="login-button">
             <button type="submit" className="fantasy">
@@ -47,5 +67,6 @@ export default function Login() {
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    console.log(password, username);
   }
 }

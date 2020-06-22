@@ -1,8 +1,11 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import "./inGameBg.css";
 import Header from "../../common/header/Header";
 
-export default function InGameBg() {
+interface Props {}
+
+export default function InGameBg({}: Props): ReactElement {
+  document.body.style.background = "black";
   return (
     <div>
       <Header />
@@ -10,24 +13,24 @@ export default function InGameBg() {
         <table>
           <tbody>
             <tr>
-              <th>
+              <td>
                 <p>User1: 100HP</p>
-              </th>
+              </td>
             </tr>
             <tr>
-              <th>
+              <td>
                 <p>User2: 100HP</p>
-              </th>
+              </td>
             </tr>
             <tr>
-              <th>
+              <td>
                 <p>User3: 100HP</p>
-              </th>
+              </td>
             </tr>
             <tr>
-              <th>
+              <td>
                 <p>User4: 100HP</p>
-              </th>
+              </td>
             </tr>
           </tbody>
         </table>
